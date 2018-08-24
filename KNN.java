@@ -2,6 +2,7 @@ import java.util.*;
 import java.lang.Math;
 import java.util.Map.Entry;
 
+
 public class KNN
 {
 	/*
@@ -16,7 +17,7 @@ public class KNN
 	static String a3;
 	static double[] d1= new double[20];
 	static double[] d2= new double[20];
-	static int[] d3= new int[20];
+	static double[] d3= new double[20];
 	static double[] finald=new double[20];
 	static int[] countclass=new int[2];
 	static int finalclass;
@@ -73,7 +74,9 @@ public class KNN
 					count++;
 				}
 			}
-			d3[i]=count;
+			d3[i]=count/6;
+			//System.out.println("df= "+ d3[i]);
+
 		}
 	}
 
